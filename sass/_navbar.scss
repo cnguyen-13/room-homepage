@@ -1,0 +1,72 @@
+.clickable {
+    cursor: pointer;
+}
+
+header {
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.nav-bar {
+    width: 100vw;
+    padding: 1rem 2rem;
+    min-height: 125px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.empty {
+    width: 35px;
+    height: 27px;
+}
+
+.nav-list {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: transform 300ms ease-in-out;
+    transform: translateX(100%);
+    background-color: white;
+    padding: 1rem 2rem;
+    min-height: 125px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list ul li {
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.mask {
+    height: 90vh;
+    background-color: black;
+    opacity: 0.6;
+    transition: transform 300ms ease-in-out;
+    transform: translateY(-150%);
+    z-index: -1;
+}
+
+.mask-active {
+    transform: translateY(0);
+}
