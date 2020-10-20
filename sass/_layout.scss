@@ -38,6 +38,10 @@
     }
 
     .sub-text {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         grid-area: 6 / 5 / span 3 / span 6;
     }
 

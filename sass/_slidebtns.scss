@@ -1,0 +1,31 @@
+.slide-btns {
+    width: 30%;
+    height: 15%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slide-btn {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+        background-color: #333; //CHANGE LATER
+    }
+}
+
+.slide-btn-1 {
+    background-image: url('../images/icon-angle-left.svg');
+}
+
+.slide-btn-2 {
+    background-image: url('../images/icon-angle-right.svg');
+}
