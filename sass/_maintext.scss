@@ -1,14 +1,46 @@
 .main-text {
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         line-height: 1;
+        margin-bottom: 1rem;
     }
 
     .shop-now {
         font-size: 0.75rem;
         text-decoration: none;
-        letter-spacing: 0.75rem;
-        //Change font weight?
+        letter-spacing: 0.8rem;
         font-weight: 600;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-text {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0rem;
+        }
+
+        .shop-now {
+            font-size: 1rem;
+            text-decoration: none;
+            letter-spacing: 0.75rem;
+            //Change font weight?
+            font-weight: 600;
+        }
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main-text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            width: 70%;
+        }
     }
 }

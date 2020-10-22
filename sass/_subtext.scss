@@ -2,9 +2,27 @@
     h3 {
         font-size: 0.8rem;
         letter-spacing: 4px;
+        margin-bottom: 0.75rem;
     }
 
     .standard-text {
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sub-text {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .sub-text-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
     }
 }

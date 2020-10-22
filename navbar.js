@@ -1,4 +1,4 @@
-const navButtons = document.querySelectorAll('.nav-bar-clickable');
+const navButtons = document.querySelectorAll('.nav-bar-control');
 const navLinks = document.querySelector('.nav-list');
 const mask = document.querySelector('.mask');
 
