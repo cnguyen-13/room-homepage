@@ -2,9 +2,25 @@
     h3 {
         font-size: 0.8rem;
         letter-spacing: 4px;
+        margin-bottom: 0.5rem;
     }
 
     .standard-text {
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .sub-text,
+    .sub-text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sub-text-content {
+        padding: 3.5rem;
+        gap: 0.5rem;
     }
 }

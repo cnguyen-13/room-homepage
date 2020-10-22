@@ -4,7 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- displays site properly based on user's device -->
-        <script src="./navbar.js" defer></script>
+        <script src="./javascript/navbar.js" defer></script>
+        <script src="./javascript/images.js" defer></script>
+        <script src="./javascript/sliding.js" defer></script>
         <link rel="stylesheet" href="./styles/styles.css" />
         <link
             rel="icon"
@@ -27,72 +29,87 @@
         </style>
     </head>
     <body>
-        <header>
-            <div class="nav-bar">
-                <img
-                    class="clickable nav-bar-clickable"
-                    src="./images/icon-hamburger.svg"
-                    alt=""
-                />
-                <img src="./images/logo.svg" alt="Room logo" />
-                <div class="empty"></div>
-            </div>
-            <nav class="nav-list">
-                <img
-                    class="clickable nav-bar-clickable"
-                    src="./images/icon-close.svg"
-                    alt=""
-                />
-                <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <div class="mask"></div>
-        </header>
-
-        <main class="layout">
+        <main class="grid-layout-1440">
+            <!-- Hero / Navigation Section -->
             <div class="hero">
-                <img src="./images/mobile-image-hero-1.jpg" alt="" />
-                <div class="slide-btns">
-                    <div class="slide-btn slide-btn-1"></div>
-                    <div class="slide-btn slide-btn-2"></div>
+                <nav class="navigation">
+                    <div class="nav-bar">
+                        <img
+                            class="nav-bar-control"
+                            src="./images/icon-hamburger.svg"
+                            alt=""
+                        />
+                        <img src="./images/logo.svg" alt="Room logo" />
+                        <div class="empty"></div>
+                    </div>
+                    <nav class="nav-list">
+                        <img
+                            class="nav-bar-control"
+                            src="./images/icon-close.svg"
+                            alt=""
+                        />
+                        <ul>
+                            <li>Home</li>
+                            <li>Shop</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                    <div class="mask"></div>
+                </nav>
+                <div class="hero-images">
+                    <img class="mobile-img" src="./images/mobile-image-hero-1.jpg" alt="" />
+                    <img class="mobile-img" src="./images/mobile-image-hero-2.jpg" alt="" />
+                    <img class="mobile-img" src="./images/mobile-image-hero-3.jpg" alt="" />
                 </div>
+                
+            </div>
+            <div class="slide-btns">
+                <div class="slide-btn slide-btn-1"></div>
+                <div class="slide-btn slide-btn-2"></div>
             </div>
 
+             <!-- Main Text Section -->
             <section class="main-text mobile-text-padding">
-                <h2 class="title-mb">Discover innovative ways to decorate</h2>
-                <p class="standard-text">
-                    We provide unmatched quality, comfort, and style for
-                    property owners across the country. Our experts combine form
-                    andnfunction in bringing your vision to life. Create a room
-                    in your own style with our collection and make your property
-                    a reflection of you and what you love.
-                </p>
-                <a class="shop-now uppercase" href="#"
-                    >Shop now <img src="./images/icon-arrow.svg"
-                /></a>
+                <div class="main-text-content">
+                    <h2>Discover innovative ways to decorate</h2>
+                    <p class="standard-text">
+                        We provide unmatched quality, comfort, and style for
+                        property owners across the country. Our experts combine form
+                        andnfunction in bringing your vision to life. Create a room
+                        in your own style with our collection and make your property
+                        a reflection of you and what you love.
+                    </p>
+                    <a class="shop-now uppercase" href="#"
+                        >Shop now <img src="./images/icon-arrow.svg"
+                    /></a>
+                </div>
             </section>
 
-            <div class="static-img">
-                <img src="./images/image-about-dark.jpg" alt="" />
+            <!-- Dark Static Img -->
+            <div class="static-img-area static-img-1">
+                <img class="mobile-img" src="./images/image-about-dark.jpg" alt="" />
             </div>
+
+            <!-- Sub Text Section -->
             <section class="sub-text mobile-text-padding">
-                <h3 class="title-mb uppercase">About our furniture</h3>
-                <p class="standard-text">
-                    Our multifunctional collection blends design and function to
-                    suit your individual taste. Make each room unique, or pick a
-                    cohesive theme that best express your interests and what
-                    inspires you. Find the furniture pieces you need, from
-                    traditional to contemporary styles or anything in between.
-                    Product specialists are available to help you create your
-                    dream space.
-                </p>
+                <div class="sub-text-content">
+                    <h3 class="uppercase">About our furniture</h3>
+                    <p class="standard-text">
+                        Our multifunctional collection blends design and function to
+                        suit your individual taste. Make each room unique, or pick a
+                        cohesive theme that best express your interests and what
+                        inspires you. Find the furniture pieces you need, from
+                        traditional to contemporary styles or anything in between.
+                        Product specialists are available to help you create your
+                        dream space.
+                    </p>
+                </div>
             </section>
-            <div class="static-img">
-                <img src="./images/image-about-light.jpg" alt="" />
+
+            <!-- Light Static Img -->
+            <div class="static-img-area static-img-2">
+                <img class="mobile-img" src="./images/image-about-light.jpg" alt="" />
             </div>
         </main>
         <!-- 

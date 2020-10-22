@@ -10,9 +10,13 @@
 body {
     position: relative;
     overflow-x: hidden;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 
 a {
     color: black;
+}
+
+main {
+    height: 100vh;
 }

@@ -1,13 +1,15 @@
-.clickable {
-    cursor: pointer;
-}
-
-header {
+nav.navigation {
     position: absolute;
     font-size: 0.75rem;
     font-weight: 600;
+    z-index: 5;
+
+    .nav-bar-control {
+        cursor: pointer;
+    }
 }
 
+//Navbar
 .nav-bar {
     width: 100vw;
     padding: 1rem 2rem;
@@ -16,46 +18,49 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 4;
+
+    .empty {
+        width: 35px;
+        height: 27px;
+    }
 }
 
-.empty {
-    width: 35px;
-    height: 27px;
-}
-
-.nav-list {
+//Navbar list
+nav.nav-list {
+    min-height: 125px;
+    height: 10vh;
     width: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 6;
     transition: transform 300ms ease-in-out;
     transform: translateX(100%);
     background-color: white;
     padding: 1rem 2rem;
-    min-height: 125px;
-    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.nav-active {
-    transform: translateX(0);
-}
+    &.nav-active {
+        transform: translateX(0);
+    }
 
-.nav-list ul {
-    list-style: none;
-    display: flex;
-    width: 75%;
-    justify-content: space-between;
-    align-items: center;
-}
+    ul {
+        list-style: none;
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+        align-items: center;
 
-.nav-list ul li {
-    text-transform: lowercase;
-    font-weight: bold;
+        li {
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-transform: lowercase;
+            font-weight: 700;
+        }
+    }
 }
 
 .mask {
@@ -69,4 +74,59 @@ header {
 
 .mask-active {
     transform: translateY(0);
+}
+
+@media (min-width: 1440px) {
+
+    .mask,
+    .empty,
+    .nav-bar-control {
+        display: none;
+    }
+
+    nav.navigation {
+        width: 100%;
+        padding-left: 2rem;
+        display: flex;
+        color: white;
+    }
+
+    .nav-bar {
+        width: fit-content;
+        padding: 1rem 2rem;
+        min-height: 125px;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav.nav-list {
+
+        max-width: 450px;
+        width: 50%;
+        transform: translateX(0);
+        position: static;
+        background-color: transparent;
+
+        ul {
+            li {
+                font-weight: 600;
+
+                &:hover {
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        margin: auto;
+                        width: 20px;
+                        padding-top: 0.25rem;
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
