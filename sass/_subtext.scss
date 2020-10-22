@@ -11,18 +11,16 @@
 }
 
 @media (min-width: 1440px) {
-    .sub-text {
-        margin: auto;
+
+    .sub-text,
+    .sub-text-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
 
-        .sub-text-content {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 1rem;
-        }
+    .sub-text-content {
+        padding: 3.5rem;
+        gap: 1rem;
     }
 }

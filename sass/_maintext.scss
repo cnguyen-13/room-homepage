@@ -6,6 +6,9 @@
     }
 
     .shop-now {
+        position: relative;
+        z-index: 5;
+        cursor: pointer;
         font-size: 0.75rem;
         text-decoration: none;
         letter-spacing: 0.8rem;
