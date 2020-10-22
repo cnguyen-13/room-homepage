@@ -10,6 +10,11 @@
         grid-area: 1 / 1 / span 5 / span 8;
     }
 
+    .slide-btns {
+        align-self: end;
+        grid-area: 5 / 7 / span 1 / span 2;
+    }
+
     .main-text {
         grid-area: 1 / 9 / span 5 / span 6;
     }
