@@ -1,10 +1,9 @@
 @media (min-width: 1440px) {
     .grid-layout-1440 {
-        min-height: 800px;
+        min-height: 900px;
         height: 100vh;
         display: grid;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-columns: repeat(14, 1fr);
+        grid-template: repeat(8, 1fr) / repeat(14, 1fr);
     }
 
     .hero {
