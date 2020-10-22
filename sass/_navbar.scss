@@ -121,6 +121,17 @@ nav.nav-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        ul {
+            li {
+                cursor: pointer;
+                font-size: 0.8rem;
+                text-transform: lowercase;
+                font-weight: 700;
+
+                &:hover {}
+            }
+        }
     }
 
 }

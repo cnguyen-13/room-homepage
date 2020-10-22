@@ -13,6 +13,11 @@
         text-decoration: none;
         letter-spacing: 0.8rem;
         font-weight: 600;
+        transition: opacity 0.3s linear;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 }
 
