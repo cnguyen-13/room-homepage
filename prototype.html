@@ -18,12 +18,14 @@
             overflow-x: hidden;
         }
 
-        #slider {
+        #slide-show {
             height: 100%;
             display: flex;
             transition: transform 0.5s ease-in;
+            position: relative;
+            z-index: -9999;
         }
-        .item {
+        .slide-show-item {
             width: 100%;
             height: 100%;
         }
@@ -46,14 +48,14 @@
     </style>
 </head>
 <body>
-    <button id="left">GO LEFT</button>
-    <button id="right">GO RIGHT</button>
+    <button id="slide-show-prev-btn">GO LEFT</button>
+    <button id="slide-show-next-btn">GO RIGHT</button>
     <div class="container">
-        <div id="slider">
-            <div class="item first"></div>
-            <div class="item second"></div>
-            <div class="item third"></div>
-            <div class="item fourth"></div>
+        <div id="slide-show">
+            <div class="slide-show-item first"></div>
+            <div class="slide-show-item second"></div>
+            <div class="slide-show-item third"></div>
+            <div class="slide-show-item fourth"></div>
         </div>
     </div>
 
