@@ -1,8 +1,10 @@
 .slide-btns {
-    position: relative;
+    position: absolute;
+    right: 0;
+    transform: translatey(-100%);
     z-index: 500;
-    width: 30%;
-    height: 15%;
+    width: 40%;
+    height: 10%;
     background-color: black;
     display: flex;
     align-items: center;
