@@ -37,19 +37,7 @@
     display: none !important;
 }
 
-@keyframes slideInto {
-    from {
-        opacity: 0;
-        transform: translateY(-2rem);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0%)
-    }
-
-
-}
 
 @media (min-width: 1440px) {
     .main-text {
