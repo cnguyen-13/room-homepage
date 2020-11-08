@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding prototype</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            height: 90vh;
+            border: 5px solid red;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        #slide-show {
+            height: 100%;
+            display: flex;
+            transition: transform 0.5s ease-in;
+            position: relative;
+            z-index: -9999;
+        }
+        .slide-show-item {
+            width: 100%;
+            height: 100%;
+        }
+
+        .first {
+            background-color: yellow;
+        }
+
+        .second {
+            background-color: green;
+        }
+
+        .third {
+            background-color: aqua;
+        }
+
+        .fourth {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <button id="slide-show-prev-btn">GO LEFT</button>
+    <button id="slide-show-next-btn">GO RIGHT</button>
+    <div class="container">
+        <div id="slide-show">
+            <div class="slide-show-item first"></div>
+            <div class="slide-show-item second"></div>
+            <div class="slide-show-item third"></div>
+            <div class="slide-show-item fourth"></div>
+        </div>
+    </div>
+
+    <script src="./javascript/sliding.js">
+
+    </script>
+</body>
+</html>

@@ -16,18 +16,8 @@
         />
 
         <title>Frontend Mentor | Room homepage</title>
-
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
     </head>
+
     <body>
         <main class="grid-layout-1440">
             <!-- Hero / Navigation Section -->
@@ -57,21 +47,26 @@
                     </nav>
                     <div class="mask"></div>
                 </nav>
-                <div class="hero-images">
+                <div class="slide-show mobile-slide-show">
                     <img class="mobile-img" src="./images/mobile-image-hero-1.jpg" alt="" />
                     <img class="mobile-img" src="./images/mobile-image-hero-2.jpg" alt="" />
                     <img class="mobile-img" src="./images/mobile-image-hero-3.jpg" alt="" />
                 </div>
+                <div class="slide-show dt-slide-show">
+                    <div class="slide-show-item slide-show-item-1"></div>
+                    <div class="slide-show-item slide-show-item-2"></div>
+                    <div class="slide-show-item slide-show-item-3"></div>
+                </div>
                 
             </div>
             <div class="slide-btns">
-                <div class="slide-btn slide-btn-1"></div>
-                <div class="slide-btn slide-btn-2"></div>
+                <div id="slide-show-prev-btn" class="slide-btn slide-btn-1"></div>
+                <div id="slide-show-next-btn" class="slide-btn slide-btn-2"></div>
             </div>
 
              <!-- Main Text Section -->
             <section class="main-text mobile-text-padding">
-                <div class="main-text-content">
+                <div class="main-text-content active">
                     <h2>Discover innovative ways to decorate</h2>
                     <p class="standard-text">
                         We provide unmatched quality, comfort, and style for
@@ -79,6 +74,28 @@
                         andnfunction in bringing your vision to life. Create a room
                         in your own style with our collection and make your property
                         a reflection of you and what you love.
+                    </p>
+                    <a class="shop-now uppercase" href="#"
+                        >Shop now <img src="./images/icon-arrow.svg"
+                    /></a>
+                </div>
+                <div class="main-text-content disable">
+                    <h2>We are available all across the globe</h2>
+                    <p class="standard-text">
+                        With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+                        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+                        store locator. Any questions? Don't hesitate to contact us today.
+                    </p>
+                    <a class="shop-now uppercase" href="#"
+                        >Shop now <img src="./images/icon-arrow.svg"
+                    /></a>
+                </div>
+                <div class="main-text-content disable">
+                    <h2>Manufactured with the best materials</h2>
+                    <p class="standard-text">
+                        Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+                        to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+                        experience in this industry, we understand what customers want for their home and office.
                     </p>
                     <a class="shop-now uppercase" href="#"
                         >Shop now <img src="./images/icon-arrow.svg"

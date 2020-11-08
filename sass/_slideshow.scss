@@ -1,0 +1,44 @@
+.slide-show {
+    height: 100%;
+    transition: transform 0.3s ease-in;
+    position: relative;
+    z-index: -9999;
+}
+
+.mobile-slide-show {
+    display: flex;
+}
+
+.dt-slide-show {
+    display: none;
+}
+
+.slide-show-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-show-item-1 {
+    background-image: url('../images/desktop-image-hero-1.jpg');
+}
+
+.slide-show-item-2 {
+    background-image: url('../images/desktop-image-hero-2.jpg');
+}
+
+.slide-show-item-3 {
+    background-image: url('../images/desktop-image-hero-3.jpg');
+}
+
+@media (min-width: 1440px) {
+    .mobile-slide-show {
+        display: none;
+    }
+
+    .dt-slide-show {
+        display: flex;
+    }
+}
