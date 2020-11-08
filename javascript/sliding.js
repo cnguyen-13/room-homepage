@@ -4,6 +4,7 @@ let slideInterval = null;
 const left = document.querySelector('#slide-show-next-btn');
 const right = document.querySelector('#slide-show-prev-btn');
 const slideShows = document.querySelectorAll('.slide-show');
+const textContents = document.querySelectorAll('.main-text-content');
 
 function setWidthAndInterval() {
     //Set the number of children in the slider container and interval of shifts
@@ -35,11 +36,31 @@ function moveSlideShow(e) {
     slideShows.forEach(show => {
         show.style.transform = `translate(-${slideNumber*slideInterval}%)`;
     })
+
+    //Change Text
+    textContents.forEach((text, idx) => {
+        if (idx === slideNumber) {
+            text.classList.remove('disable');
+            text.classList.add('active');
+        } else {
+            text.classList.add('disable');
+            text.classList.remove('active')
+        }
+    })
     return;
 }
 
+/**
+ * have main-text-content invisible
+ * have active class with animation
+ * array / slidenumber to say which child of '.main-text' to display
+ *
+ */
 
 //Event Listeners
 window.addEventListener('load', setWidthAndInterval);
 right.addEventListener('click', moveSlideShow);
+
+
 left.addEventListener('click', moveSlideShow);
+

@@ -3,6 +3,8 @@
     z-index: 1;
     background-color: white;
 
+    .main-text-content {}
+
     h2 {
         font-size: 1.6rem;
         line-height: 1;
@@ -23,6 +25,30 @@
             color: hsl(0, 0%, 63%);
         }
     }
+}
+
+.active {
+    animation: slideInto 300ms ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.disable {
+    display: none !important;
+}
+
+@keyframes slideInto {
+    from {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+
+
 }
 
 @media (min-width: 1440px) {
@@ -54,6 +80,10 @@
             justify-content: center;
             gap: 1.5rem;
             width: 70%;
+        }
+
+        .shop-now {
+            margin: 2rem 0;
         }
     }
 }
