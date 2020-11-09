@@ -64,12 +64,13 @@ nav.nav-list {
 }
 
 .mask {
+    position: relative;
     height: 90vh;
     background-color: black;
     opacity: 0.6;
     transition: transform 300ms ease-in-out;
     transform: translateY(-150%);
-    z-index: -1;
+    z-index: 99999;
 }
 
 .mask-active {
