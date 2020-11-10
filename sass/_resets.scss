@@ -8,12 +8,11 @@
 }
 
 body {
-    position: relative;
     overflow-x: hidden;
     line-height: 1.75;
-    height: 100vh;
 }
 
 a {
-    color: black;
+    text-decoration: none;
+    color: $color-black;
 }

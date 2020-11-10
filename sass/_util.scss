@@ -1,7 +1,7 @@
 .standard-text {
     font-size: 0.8rem;
     margin-bottom: 3rem;
-    color: hsl(0, 0%, 63%);
+    color: $color-text;
 }
 
 .mobile-text-padding {
@@ -17,13 +17,17 @@
     width: 100%;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 @media (min-width: 1440px) {
     .standard-text {
         margin-bottom: 0;
     }
 
     .mobile-text-padding {
-        padding: 0rem;
+        padding: 0;
     }
 
     .mobile-img {

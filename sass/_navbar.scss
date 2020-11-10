@@ -2,11 +2,6 @@ nav.navigation {
     position: absolute;
     font-size: 0.75rem;
     font-weight: 600;
-    z-index: 5;
-
-    .nav-bar-control {
-        cursor: pointer;
-    }
 }
 
 //Navbar
@@ -18,12 +13,11 @@ nav.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 4;
+}
 
-    .empty {
-        width: 35px;
-        height: 27px;
-    }
+.empty {
+    width: 35px;
+    height: 27px;
 }
 
 //Navbar list
@@ -34,10 +28,10 @@ nav.nav-list {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 6;
+    z-index: 4;
     transition: transform 300ms ease-in-out;
     transform: translateX(100%);
-    background-color: white;
+    background-color: $color-white;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -56,7 +50,6 @@ nav.nav-list {
 
         li {
             font-size: 0.9rem;
-            cursor: pointer;
             text-transform: lowercase;
             font-weight: 700;
         }
@@ -66,15 +59,14 @@ nav.nav-list {
 .mask {
     position: relative;
     height: 90vh;
-    background-color: black;
-    opacity: 0.6;
+    background-color: $color-black-transparent;
     transition: transform 300ms ease-in-out;
     transform: translateY(-150%);
-    z-index: 99999;
-}
+    z-index: 3;
 
-.mask-active {
-    transform: translateY(0);
+    &.mask-active {
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 1440px) {
@@ -89,7 +81,7 @@ nav.nav-list {
         width: 100%;
         padding-left: 2rem;
         display: flex;
-        color: white;
+        color: $color-white;
     }
 
     .nav-bar {
@@ -103,7 +95,6 @@ nav.nav-list {
     }
 
     nav.nav-list {
-
         max-width: 450px;
         width: 50%;
         transform: translateX(0);
@@ -111,23 +102,21 @@ nav.nav-list {
         background-color: transparent;
 
         ul {
+
             li {
                 font-weight: 600;
 
                 &:hover {
-
                     &:after {
                         content: '';
                         display: block;
                         margin: auto;
                         width: 20px;
                         padding-top: 0.25rem;
-                        border-bottom: 2px solid white;
+                        border-bottom: 2px solid $color-white;
                     }
                 }
             }
         }
     }
-
-
 }

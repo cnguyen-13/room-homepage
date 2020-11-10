@@ -1,13 +1,4 @@
 .hero {
     position: relative;
-    z-index: 1;
-}
-
-@media(min-width: 1440px) {
-    .hero {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-image: url('../images/desktop-image-hero-1.jpg');
-    }
+    z-index: 2;
 }
