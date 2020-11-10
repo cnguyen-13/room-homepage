@@ -1,16 +1,16 @@
-.slide-show {
-    height: 100%;
-    transition: transform 0.3s ease-in;
-    position: relative;
-    z-index: -9999;
-}
-
 .mobile-slide-show {
     display: flex;
 }
 
 .dt-slide-show {
     display: none;
+}
+
+.slide-show {
+    height: 100%;
+    transition: transform 0.3s ease-in;
+    position: relative;
+    z-index: -9999;
 }
 
 .slide-show-item {

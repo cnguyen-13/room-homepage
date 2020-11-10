@@ -8,15 +8,11 @@
 }
 
 body {
-    position: relative;
     overflow-x: hidden;
     line-height: 1.75;
 }
 
 a {
-    color: black;
-}
-
-main {
-    height: 100vh;
+    text-decoration: none;
+    color: $color-black;
 }

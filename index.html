@@ -3,9 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
         <script src="./javascript/navbar.js" defer></script>
-        <script src="./javascript/images.js" defer></script>
         <script src="./javascript/sliding.js" defer></script>
         <link rel="stylesheet" href="./styles/styles.css" />
         <link
@@ -14,130 +12,171 @@
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
-
         <title>Frontend Mentor | Room homepage</title>
     </head>
 
-    <body>
-        <main class="grid-layout-1440">
-            <!-- Hero / Navigation Section -->
-            <div class="hero">
-                <nav class="navigation">
-                    <div class="nav-bar">
-                        <img
-                            class="nav-bar-control"
-                            src="./images/icon-hamburger.svg"
-                            alt=""
-                        />
-                        <img src="./images/logo.svg" alt="Room logo" />
-                        <div class="empty"></div>
-                    </div>
-                    <nav class="nav-list">
-                        <img
-                            class="nav-bar-control"
-                            src="./images/icon-close.svg"
-                            alt=""
-                        />
-                        <ul>
-                            <li>Home</li>
-                            <li>Shop</li>
-                            <li>About</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
-                    <div class="mask"></div>
+    <body class="grid-layout-1440">
+        <!-- Hero / Navigation Section -->
+        <div class="hero">
+            <!-- Navitgation Portion-->
+            <nav class="navigation">
+                <div class="nav-bar">
+                    <img
+                        class="nav-bar-control clickable"
+                        src="./images/icon-hamburger.svg"
+                        alt="Hamburger Menu"
+                    />
+                    <img src="./images/logo.svg" alt="Room logo" />
+                    <div class="empty"></div>
+                </div>
+
+                <nav class="nav-list">
+                    <img
+                        class="nav-bar-control clickable"
+                        src="./images/icon-close.svg"
+                        alt="Close Menu"
+                    />
+                    <ul>
+                        <li class="clickable">Home</li>
+                        <li class="clickable">Shop</li>
+                        <li class="clickable">About</li>
+                        <li class="clickable">Contact</li>
+                    </ul>
                 </nav>
-                <div class="slide-show mobile-slide-show">
-                    <img class="mobile-img" src="./images/mobile-image-hero-1.jpg" alt="" />
-                    <img class="mobile-img" src="./images/mobile-image-hero-2.jpg" alt="" />
-                    <img class="mobile-img" src="./images/mobile-image-hero-3.jpg" alt="" />
-                </div>
-                <div class="slide-show dt-slide-show">
-                    <div class="slide-show-item slide-show-item-1"></div>
-                    <div class="slide-show-item slide-show-item-2"></div>
-                    <div class="slide-show-item slide-show-item-3"></div>
-                </div>
-                
-            </div>
-            <div class="slide-btns">
-                <div id="slide-show-prev-btn" class="slide-btn slide-btn-1"></div>
-                <div id="slide-show-next-btn" class="slide-btn slide-btn-2"></div>
-            </div>
 
-             <!-- Main Text Section -->
-            <section class="main-text mobile-text-padding">
-                <div class="main-text-content active">
-                    <h2>Discover innovative ways to decorate</h2>
-                    <p class="standard-text">
-                        We provide unmatched quality, comfort, and style for
-                        property owners across the country. Our experts combine form
-                        andnfunction in bringing your vision to life. Create a room
-                        in your own style with our collection and make your property
-                        a reflection of you and what you love.
-                    </p>
-                    <a class="shop-now uppercase" href="#"
-                        >Shop now <img src="./images/icon-arrow.svg"
-                    /></a>
-                </div>
-                <div class="main-text-content disable">
-                    <h2>We are available all across the globe</h2>
-                    <p class="standard-text">
-                        With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-                        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-                        store locator. Any questions? Don't hesitate to contact us today.
-                    </p>
-                    <a class="shop-now uppercase" href="#"
-                        >Shop now <img src="./images/icon-arrow.svg"
-                    /></a>
-                </div>
-                <div class="main-text-content disable">
-                    <h2>Manufactured with the best materials</h2>
-                    <p class="standard-text">
-                        Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-                        to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-                        experience in this industry, we understand what customers want for their home and office.
-                    </p>
-                    <a class="shop-now uppercase" href="#"
-                        >Shop now <img src="./images/icon-arrow.svg"
-                    /></a>
-                </div>
-            </section>
+                <div class="mask"></div>
+            </nav>
 
-            <!-- Dark Static Img -->
-            <div class="static-img-area static-img-1">
-                <img class="mobile-img" src="./images/image-about-dark.jpg" alt="" />
+            <!-- Hero Portion-->
+            <div class="slide-show mobile-slide-show">
+                <img
+                    class="mobile-img"
+                    src="./images/mobile-image-hero-1.jpg"
+                    alt="Innovative Ways to Decorate Hero"
+                />
+                <img
+                    class="mobile-img"
+                    src="./images/mobile-image-hero-2.jpg"
+                    alt="Available Across the Globe Hero"
+                />
+                <img
+                    class="mobile-img"
+                    src="./images/mobile-image-hero-3.jpg"
+                    alt="Manufactured with the Best Materials Hero"
+                />
             </div>
 
-            <!-- Sub Text Section -->
-            <section class="sub-text mobile-text-padding">
-                <div class="sub-text-content">
-                    <h3 class="uppercase">About our furniture</h3>
-                    <p class="standard-text">
-                        Our multifunctional collection blends design and function to
-                        suit your individual taste. Make each room unique, or pick a
-                        cohesive theme that best express your interests and what
-                        inspires you. Find the furniture pieces you need, from
-                        traditional to contemporary styles or anything in between.
-                        Product specialists are available to help you create your
-                        dream space.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Light Static Img -->
-            <div class="static-img-area static-img-2">
-                <img class="mobile-img" src="./images/image-about-light.jpg" alt="" />
+            <div class="slide-show dt-slide-show">
+                <div class="slide-show-item slide-show-item-1"></div>
+                <div class="slide-show-item slide-show-item-2"></div>
+                <div class="slide-show-item slide-show-item-3"></div>
             </div>
-        </main>
-        <!-- 
+        </div>
 
-        <!-- <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Christian Nguyen</a>.
-        </div> -->
+        <!-- Slide Buttons -->
+        <div class="slide-btns">
+            <div id="slide-show-prev-btn" class="slide-btn clickable slide-btn-1"></div>
+            <div id="slide-show-next-btn" class="slide-btn clickable slide-btn-2"></div>
+        </div>
+
+        <!-- Main Text Section -->
+        <section class="main-text mobile-text-padding">
+            <!-- First Text Content -->
+            <div class="main-text-content active">
+                <h2 class="main-text-header">
+                    Discover innovative ways to decorate
+                </h2>
+                <p class="standard-text">
+                    We provide unmatched quality, comfort, and style for
+                    property owners across the country. Our experts combine form
+                    andnfunction in bringing your vision to life. Create a room
+                    in your own style with our collection and make your property
+                    a reflection of you and what you love.
+                </p>
+                <a class="shop-now uppercase clickable" href="#">
+                    Shop now
+                    <img src="./images/icon-arrow.svg" alt="Shop Now Link" />
+                </a>
+            </div>
+
+            <!-- Second Text Content -->
+            <div class="main-text-content disable">
+                <h2 class="main-text-header">
+                    We are available all across the globe
+                </h2>
+                <p class="standard-text">
+                    With stores all over the world, it's easy for you to find
+                    furniture for your home or place of business. Locally, we’re
+                    in most major cities throughout the country. Find the branch
+                    nearest you using our store locator. Any questions? Don't
+                    hesitate to contact us today.
+                </p>
+                <a class="shop-now uppercase clickable" href="#">
+                    Shop now
+                    <img src="./images/icon-arrow.svg" alt="Shop Now Link" />
+                </a>
+            </div>
+
+            <!-- Third Text Content -->
+            <div class="main-text-content disable">
+                <h2 class="main-text-header">
+                    Manufactured with the best materials
+                </h2>
+                <p class="standard-text">
+                    Our modern furniture store provide a high level of quality.
+                    Our company has invested in advanced technology to ensure
+                    that every product is made as perfect and as consistent as
+                    possible. With three decades of experience in this industry,
+                    we understand what customers want for their home and office.
+                </p>
+                <a class="shop-now uppercase clickable" href="#">
+                    Shop now
+                    <img src="./images/icon-arrow.svg" alt="Shop Now Link" />
+                </a>
+            </div>
+        </section>
+
+        <!-- Dark Static Img -->
+        <div class="static-img static-img-1">
+            <img
+                class="mobile-img"
+                src="./images/image-about-dark.jpg"
+                alt="Dark Furniture with Coffee Table"
+            />
+        </div>
+
+        <!-- Sub Text Section -->
+        <section class="sub-text mobile-text-padding">
+            <div class="sub-text-content">
+                <h3 class="sub-text-header uppercase">About our furniture</h3>
+                <p class="standard-text">
+                    Our multifunctional collection blends design and function to
+                    suit your individual taste. Make each room unique, or pick a
+                    cohesive theme that best express your interests and what
+                    inspires you. Find the furniture pieces you need, from
+                    traditional to contemporary styles or anything in between.
+                    Product specialists are available to help you create your
+                    dream space.
+                </p>
+            </div>
+        </section>
+
+        <!-- Light Static Img w/ attribution-->
+        <div class="static-img static-img-2">
+            <img
+                class="mobile-img"
+                src="./images/image-about-light.jpg"
+                alt="Bright Chair"
+            />
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                >
+                    Frontend Mentor</a
+                >. Coded by <a href="#">Christian Nguyen</a>.
+            </div>
+        </div>
     </body>
 </html>
